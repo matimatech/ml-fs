@@ -1,4 +1,4 @@
-from ._base import LinearRegression
+from ._base import LinearRegression, LogisticRegression
 from ._coordinate_descent import Lasso
 
-__all__ = ["LinearRegression", "Lasso"]
+__all__ = ["LinearRegression", "LogisticRegression", "Lasso"]
