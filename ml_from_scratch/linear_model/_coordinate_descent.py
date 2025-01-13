@@ -23,6 +23,7 @@ def _compute_cost_function(X, y, theta, lamda, fit_intercept):
         (1/(2 * n_samples)) * ||y - Xw||^2_2 + alpha * ||w||_1
         err_rss                              + err_l1
     """
+    
     n_samples, n_features = X.shape
 
     pred = np.dot(X, theta)
