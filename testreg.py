@@ -12,4 +12,3 @@ mdl1.fit(X, y)
 print(mdl1.coef_)
 print(mdl1.intercept_)
 print(mdl1.predict([1, 2]))
-

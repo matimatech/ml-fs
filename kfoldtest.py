@@ -1,6 +1,3 @@
-import copy
-import 
-
 from ml_from_scratch.linear_model import LinearRegression
 from ml_from_scratch.metrics import mean_squared_error
 from ml_from_scratch.model_selection import KFold, cross_val_score
@@ -40,7 +37,11 @@ for cols in cols_list:
     y = y_train
 
     mse_train_cols, mse_test_cols = cross_val_score(
-        estimator=LinearRegression(), X=X_cols, y=y, cv=5, scoring="mean_squared_error"
+        estimator=LinearRegression(),
+        X=X_cols,
+        y=y,
+        cv=5,
+        scoring="mean_squared_error"
     )
 
     mse_training_list.append(np.mean(mse_train_cols))

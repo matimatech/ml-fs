@@ -1,7 +1,34 @@
 import numpy as np
 
-
 class LinearRegression:
+    #TODO: Perbaiki Docstring
+    """
+    Regresi Linear
+
+    Parameters
+    ----------
+    fit_intercept: 
+
+    Attributes
+    ----------
+    coef_ : ndarray of shape (n_features,)
+        Coefficient of the features in the decision function
+
+    intercept_ : ndarray of shape (1,)
+
+    Examples
+    --------
+    >>> import numpy as np
+    >>> from ml_from_scratch.linear_model import LinearRegression
+    >>> X = np.array([[0, 0], [1, 0], [1, 1], [0, 1]])
+    >>> y = np.array([-1, 1, 1, 1])
+    >>> clf = SVC(C=10)
+    >>> clf.fit(X, y)
+    >>> clf.coef_
+    array([2. 2.])
+    >>> clf.intercept_
+    -1.0
+    """
     def __init__(self, fit_intercept=True):
         self.fit_intercept = fit_intercept
 
