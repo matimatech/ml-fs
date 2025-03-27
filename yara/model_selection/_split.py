@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class KFold:
     def __init__(self, n_splits=5, shuffle=False, random_state=42):  # reproduce random
         self.n_splits = n_splits

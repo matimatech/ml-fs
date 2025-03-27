@@ -83,6 +83,10 @@ def MAE(y):
 
     return node_impurity
 
+class Tree:
+    def __init__(self):
+
+
 
 
 

@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class SVC:
     """
     Support Vector Classifier
@@ -213,11 +212,11 @@ class SVC:
 
     def predict(self, X):
         """
-        Predict class
+        Prediksi Kelas
 
         Parameters
         ----------
-        X : array-like of shape (n_samples, n_features)
+        X : Array berukuran (n_samples, n_features)
             Vector to be scored, where `n_samples` is the number of samples and
             `n_features` is the number of features
 
