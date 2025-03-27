@@ -2,7 +2,6 @@ import numpy as np
 
 from ._base import LinearRegression
 
-
 def _soft_thresholding(rho_j, z_j, lamda):
     """
     Soft threshold function used for normalized data and Lasso regression
@@ -15,7 +14,6 @@ def _soft_thresholding(rho_j, z_j, lamda):
         theta_j = rho_j - lamda
 
     return theta_j
-
 
 def _compute_cost_function(X, y, theta, lamda, fit_intercept):
     """
@@ -82,7 +80,7 @@ class Lasso(LinearRegression):
     Examples
     --------
     >>> import numpy as np
-    >>> from ml_from_scratch.linear_model import Lasso
+    >>> from yara.linear_model import Lasso
     >>> X = np.array([[0,0], [1,1], [2,2]])
     >>> y = np.array([0, 1, 2])
     >>> clf = Lasso(alpha = 0.1)

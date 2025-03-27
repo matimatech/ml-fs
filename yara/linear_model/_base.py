@@ -19,7 +19,7 @@ class LinearRegression:
     Examples
     --------
     >>> import numpy as np
-    >>> from ml_from_scratch.linear_model import LinearRegression
+    >>> from yara.linear_model import LinearRegression
     >>> X = np.array([[0, 0], [1, 0], [1, 1], [0, 1]])
     >>> y = np.array([-1, 1, 1, 1])
     >>> clf = SVC(C=10)
